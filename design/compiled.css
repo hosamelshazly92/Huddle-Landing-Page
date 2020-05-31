@@ -1,3 +1,13 @@
+body .container .head-section button, body header button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #ff52bf;
+  border: 2px solid #ff52bf;
+  border-radius: 22px;
+  color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,15 +15,40 @@
 }
 
 body {
-  padding: 45px;
-  font-family: "Poppins", sans-serif;
+  padding: 25px;
+  font-family: "Open Sans", sans-serif;
 }
 body header img {
   width: 30px;
   height: 25px;
 }
 body header h1 {
+  font-family: "Poppins", sans-serif;
   display: inline-block;
+}
+body header button {
+  background-color: #fff;
+  color: #ff52bf;
+  height: 45px;
+  width: 150px;
+  float: right;
+}
+body .container .head-section {
+  margin: 100px 50px;
+  text-align: center;
+}
+body .container .head-section h1 {
+  margin-bottom: 25px;
+}
+body .container .head-section p {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+body .container .head-section button {
+  height: 50px;
+  width: 250px;
+  border-radius: 28px;
+  box-shadow: 2px 2px 5px #808080, 5px 5px 15px #808080;
 }
 
 /*# sourceMappingURL=compiled.css.map */

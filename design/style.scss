@@ -1,16 +1,29 @@
 //colors code
 
 $Pink: hsl(322, 100%, 66%);
-
 $Very-Dark-Cyan: hsl(192, 100%, 9%);
 $Very-Pale-Blue: hsl(207, 100%, 98%);
+$Light-Grey: #808080;
 
 //typogrophy
-$headerFont: 'Poppins',
+$Header-Font: 'Poppins',
 sans-serif;
 
-$bodyFont: 'Open Sans',
+$Body-Font: 'Open Sans',
 sans-serif;
+
+$Font-Size: 14px;
+
+//button placeholder
+%button {
+    font-family: $Body-Font;
+    font-weight: 600;
+    font-size: $Font-Size;
+    background-color: $Pink;
+    border: 2px solid $Pink;
+    border-radius: 22px;
+    color: #fff;
+}
 
 * {
     padding: 0;
@@ -19,17 +32,54 @@ sans-serif;
 }
 
 body {
-    padding: 45px;
-    font-family: $headerFont;
-    
+    padding: 25px;
+    font-family: $Body-Font;
+
     header {
+
         img {
             width: 30px;
             height: 25px;
         }
-        
+
         h1 {
+            font-family: $Header-Font;
             display: inline-block;
+        }
+
+        button {
+            @extend %button;
+            background-color: #fff;
+            color: $Pink;
+            height: 45px;
+            width: 150px;
+            float: right;
+        }
+    }
+
+    .container {
+        .head-section {
+            margin: 100px 50px;
+            text-align: center;
+
+            h1 {
+                margin-bottom: 25px;
+            }
+
+            p {
+                margin-bottom: 50px;
+                font-size: $Font-Size;
+            }
+
+            button {
+                @extend %button;
+                height: 50px;
+                width: 250px;
+                border-radius: 28px;
+                box-shadow:
+                    2px 2px 5px $Light-Grey,
+                    5px 5px 15px $Light-Grey;
+            }
         }
     }
 }
