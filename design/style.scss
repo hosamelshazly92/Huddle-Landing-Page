@@ -32,11 +32,11 @@ $Font-Size: 14px;
 }
 
 body {
-    padding: 25px;
     font-family: $Body-Font;
     font-size: $Font-Size;
 
     header {
+        padding: 25px;
 
         img {
             width: 30px;
@@ -60,10 +60,10 @@ body {
 
     .container {
         .body-container {
-            padding: 0px 50px 0px 50px;
+            padding: 0px 60px 0px 60px;
 
             .head-section {
-                margin: 100px 0px 50px 0px;
+                margin: 125px 0px 125px 0px;
                 text-align: center;
 
                 h1 {
@@ -86,49 +86,75 @@ body {
                 }
             }
 
-            .section-2nd {
+            .section-2 {
                 div {
                     text-align: center;
 
-                    img {
+                    .img-1 {
                         width: 333px;
+                        margin-bottom: 75px;
                     }
                 }
 
                 div {
                     div:first-of-type {
-                        float: left;
+                        margin: 25px 0px 25px 0px;
+                        display: inline-block;
 
                         img {
                             float: left;
-                            width: 25px;
+                            width: 35px;
                         }
 
                         p:first-of-type {
                             clear: both;
                             font-weight: 600;
-                            font-size: $Font-Size * 3;
-                        }
-                    }
-
-                    div:last-of-type {
-                        float: right;
-
-                        img {
-                            float: left;
-                            width: 25px;
+                            font-size: $Font-Size * 6;
                         }
 
-                        p:first-of-type {
-                            clear: both; 
-                            font-weight: 600;
-                            font-size: $Font-Size * 3;
+                        p:last-of-type {
+                            font-size: $Font-Size * 1.5;
+                            color: $Light-Grey;
                         }
                     }
                 }
             }
-
-
         }
+    }
+}
+
+.section-3 {
+    .top {
+        background-image: url(../images/bg-section-top-mobile-1.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top;
+        height: 112px;
+    }
+
+    .middle {
+        text-align: center;
+        background-color: $Very-Pale-Blue;
+        
+        .img-2 {
+            width: 333px;
+            margin: 100px 0px 50px 0px;
+        }
+
+        h2 {
+            margin: 0px 125px 25px 125px;
+        }
+
+        p {
+            margin: 0px 125px 0px 125px;
+        }
+    }
+
+    .bottom {
+        background-image: url(../images/bg-section-bottom-mobile-1.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: bottom;
+        height: 112px;
     }
 }
