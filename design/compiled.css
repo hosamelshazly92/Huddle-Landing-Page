@@ -1,4 +1,4 @@
-body .container .head-section button, body header button {
+body .container .body-container .head-section button, body header button {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -17,6 +17,7 @@ body .container .head-section button, body header button {
 body {
   padding: 25px;
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 body header img {
   width: 30px;
@@ -33,22 +34,55 @@ body header button {
   width: 150px;
   float: right;
 }
-body .container .head-section {
-  margin: 100px 50px;
+body .container .body-container {
+  padding: 0px 50px 0px 50px;
+}
+body .container .body-container .head-section {
+  margin: 100px 0px 50px 0px;
   text-align: center;
 }
-body .container .head-section h1 {
+body .container .body-container .head-section h1 {
   margin-bottom: 25px;
 }
-body .container .head-section p {
+body .container .body-container .head-section p {
   margin-bottom: 50px;
   font-size: 14px;
 }
-body .container .head-section button {
+body .container .body-container .head-section button {
   height: 50px;
   width: 250px;
   border-radius: 28px;
   box-shadow: 2px 2px 5px #808080, 5px 5px 15px #808080;
+}
+body .container .body-container .section-2nd div {
+  text-align: center;
+}
+body .container .body-container .section-2nd div img {
+  width: 333px;
+}
+body .container .body-container .section-2nd div div:first-of-type {
+  float: left;
+}
+body .container .body-container .section-2nd div div:first-of-type img {
+  float: left;
+  width: 25px;
+}
+body .container .body-container .section-2nd div div:first-of-type p:first-of-type {
+  clear: both;
+  font-weight: 600;
+  font-size: 42px;
+}
+body .container .body-container .section-2nd div div:last-of-type {
+  float: right;
+}
+body .container .body-container .section-2nd div div:last-of-type img {
+  float: left;
+  width: 25px;
+}
+body .container .body-container .section-2nd div div:last-of-type p:first-of-type {
+  clear: both;
+  font-weight: 600;
+  font-size: 42px;
 }
 
 /*# sourceMappingURL=compiled.css.map */

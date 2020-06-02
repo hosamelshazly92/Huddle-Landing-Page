@@ -34,6 +34,7 @@ $Font-Size: 14px;
 body {
     padding: 25px;
     font-family: $Body-Font;
+    font-size: $Font-Size;
 
     header {
 
@@ -58,28 +59,76 @@ body {
     }
 
     .container {
-        .head-section {
-            margin: 100px 50px;
-            text-align: center;
+        .body-container {
+            padding: 0px 50px 0px 50px;
 
-            h1 {
-                margin-bottom: 25px;
+            .head-section {
+                margin: 100px 0px 50px 0px;
+                text-align: center;
+
+                h1 {
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    margin-bottom: 50px;
+                    font-size: $Font-Size;
+                }
+
+                button {
+                    @extend %button;
+                    height: 50px;
+                    width: 250px;
+                    border-radius: 28px;
+                    box-shadow:
+                        2px 2px 5px $Light-Grey,
+                        5px 5px 15px $Light-Grey;
+                }
             }
 
-            p {
-                margin-bottom: 50px;
-                font-size: $Font-Size;
+            .section-2nd {
+                div {
+                    text-align: center;
+
+                    img {
+                        width: 333px;
+                    }
+                }
+
+                div {
+                    div:first-of-type {
+                        float: left;
+
+                        img {
+                            float: left;
+                            width: 25px;
+                        }
+
+                        p:first-of-type {
+                            clear: both;
+                            font-weight: 600;
+                            font-size: $Font-Size * 3;
+                        }
+                    }
+
+                    div:last-of-type {
+                        float: right;
+
+                        img {
+                            float: left;
+                            width: 25px;
+                        }
+
+                        p:first-of-type {
+                            clear: both; 
+                            font-weight: 600;
+                            font-size: $Font-Size * 3;
+                        }
+                    }
+                }
             }
 
-            button {
-                @extend %button;
-                height: 50px;
-                width: 250px;
-                border-radius: 28px;
-                box-shadow:
-                    2px 2px 5px $Light-Grey,
-                    5px 5px 15px $Light-Grey;
-            }
+
         }
     }
 }
