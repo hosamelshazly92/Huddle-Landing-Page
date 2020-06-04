@@ -376,11 +376,8 @@ body {
 
         .container {
             .body-container {
-                //                padding: 0px 60px;
 
                 .section-head {
-                    //                    margin: 125px 0px;
-                    //                    text-align: center;
 
                     h1 {
                         font-size: $Font-Size * 3;
@@ -389,58 +386,22 @@ body {
 
                     p {
                         margin: 0px 25% 50px 25%;
-                        //                        font-size: $Font-Size;
                     }
-
-                    //                    button {
-                    //                        @extend %button;
-                    //                        height: 50px;
-                    //                        width: 250px;
-                    //                        border-radius: 28px;
-                    //                        box-shadow:
-                    //                            2px 2px 5px $Light-Grey,
-                    //                            5px 5px 15px $Light-Grey;
-                    //                    }
                 }
 
                 .section-2 {
                     div {
-                        //                    text-align: center;
 
                         .img-1 {
                             width: 75%;
-                            //                        margin-bottom: 75px;
                         }
                     }
-
-//                    div {
-//                        div:first-of-type {
-//                            margin: 25px 0px;
-//                            display: inline-block;
-//
-//                            img {
-//                                float: left;
-//                                width: 35px;
-//                            }
-//
-//                            p:first-of-type {
-//                                clear: both;
-//                                font-weight: 600;
-//                                font-size: $Font-Size * 6;
-//                            }
-//
-//                            p:last-of-type {
-//                                font-size: $Font-Size * 1.5;
-//                                color: $Light-Grey;
-//                            }
-//                        }
-//                    }
 
                     .media-left {
                         float: left;
                         margin-left: 12.5%;
                     }
-                    
+
                     .media-right {
                         float: right;
                         margin-right: 12.5%;
@@ -448,43 +409,36 @@ body {
                 }
             }
         }
-        
-         .section-3 {
-        margin: 250px 0px;
 
-        .top {
-            background-image: url(../images/bg-section-top-mobile-1.svg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-position: top;
-            height: 112px;
-        }
+        .section-3 {
+            margin: 250px 0px;
 
-        .middle {
-            text-align: center;
-            background-color: $Very-Pale-Blue;
-
-            .img-3 {
-                width: 333px;
-                margin: 100px 0px 50px 0px;
+            .top {
+                background-image: url(../images/bg-section-top-desktop-1.svg);
             }
 
-            h2 {
-                margin: 0px 120px 25px 120px;
+            .middle {
+                text-align: left;
+                overflow: hidden;
+
+                .img-3 {
+                    float: right;
+                    margin-right: 12.5%;
+                }
+
+                h2 {
+                    font-size: $Font-Size * 2;
+                    margin: 150px 120px 25px 120px;
+                }
+
+                p {
+                    padding-right: 40%;
+                }
             }
 
-            p {
-                margin: 0px 120px;
+            .bottom {
+                background-image: url(../images/bg-section-bottom-desktop-1.svg);
             }
         }
-
-        .bottom {
-            background-image: url(../images/bg-section-bottom-mobile-1.svg);
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-position: bottom;
-            height: 112px;
-        }
-    }
     }
 }
