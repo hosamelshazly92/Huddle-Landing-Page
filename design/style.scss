@@ -161,7 +161,7 @@ body {
     }
 
     .section-4 {
-        margin: 50px 0px 50px 0px;
+        margin: 25px 0px 25px 0px;
 
         .middle {
             text-align: center;
@@ -411,7 +411,7 @@ body {
         }
 
         .section-3 {
-            margin: 250px 0px;
+            margin: 250px 0px 100px 0px;
 
             .top {
                 background-image: url(../images/bg-section-top-desktop-1.svg);
@@ -438,6 +438,68 @@ body {
 
             .bottom {
                 background-image: url(../images/bg-section-bottom-desktop-1.svg);
+            }
+        }
+
+        .section-4 {
+            margin-bottom: 150px;
+
+            .middle {
+                text-align: left;
+
+                .img-4 {
+                    width: 333px;
+                    float: left;
+                    margin: 0% 5% 0% 12.5%;
+                }
+
+                h2 {
+                    padding-top: 50px;
+                    margin: 0px 120px 25px 120px;
+                }
+
+                p {
+                    margin: 0px 120px;
+                }
+            }
+        }
+
+        .section-5 {
+            clear: both;
+            margin: 50px 0px;
+
+            .top {
+                background-image: url(../images/bg-section-top-mobile-2.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: top;
+                height: 112px;
+            }
+
+            .middle {
+                text-align: center;
+                background-color: $Very-Pale-Blue;
+
+                .img-5 {
+                    width: 333px;
+                    margin: 100px 0px 50px 0px;
+                }
+
+                h2 {
+                    margin: 0px 120px;
+                }
+
+                p {
+                    margin: 0px 120px;
+                }
+            }
+
+            .bottom {
+                background-image: url(../images/bg-section-bottom-mobile-2.svg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: bottom;
+                height: 112px;
             }
         }
     }
