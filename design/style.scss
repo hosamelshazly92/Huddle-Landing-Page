@@ -469,16 +469,12 @@ body {
             margin: 50px 0px;
 
             .top {
-                background-image: url(../images/bg-section-top-mobile-2.svg);
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-                background-position: top;
-                height: 112px;
+                background-image: url(../images/bg-section-top-desktop-2.svg);
             }
 
             .middle {
-                text-align: center;
-                background-color: $Very-Pale-Blue;
+                text-align: left;
+//                background-color: $Very-Pale-Blue;
 
                 .img-5 {
                     width: 333px;
