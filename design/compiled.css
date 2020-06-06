@@ -172,14 +172,18 @@ body .section-6 button {
   border-radius: 28px;
   box-shadow: 2px 2px 5px #808080, 5px 5px 15px #808080;
 }
-body footer .top {
+body .top-footer {
   background-image: url(../images/bg-footer-top-mobile.svg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 100%;
   height: 112px;
 }
+body footer {
+  background-color: #00252e;
+}
 body footer .middle {
+  overflow: hidden;
   background-color: #00252e;
   color: #f5faff;
   padding: 50px 25px 0px 25px;
@@ -208,26 +212,23 @@ body footer .middle button {
   box-shadow: 2px 2px 5px #000;
   float: right;
 }
-body footer .middle div {
-  margin-top: 250px;
+body footer .bottom {
+  background-color: #00252e;
+  color: #f5faff;
+  padding: 50px 25px;
 }
-body footer .middle div .img-huddle {
+body footer .bottom div .img-huddle {
   width: 60px;
   height: 50px;
 }
-body footer .middle div h1:last-of-type {
+body footer .bottom div h1:last-of-type {
   font-family: "Poppins", sans-serif;
   display: inline-block;
   font-size: 56px;
 }
-body footer .middle div p {
+body footer .bottom div p {
   line-height: 26px;
   margin-bottom: 0px;
-}
-body footer .bottom {
-  background-color: #00252e;
-  color: #f5faff;
-  padding: 60px 25px;
 }
 body footer .bottom div {
   margin-bottom: 25px;
@@ -356,6 +357,41 @@ body footer .bottom div .img-twitter {
   }
   body .section-5 .bottom {
     background-image: url(../images/bg-section-bottom-desktop-2.svg);
+  }
+  body .section-6 h1 {
+    font-size: 35px;
+  }
+  body .top-footer {
+    height: 250px;
+  }
+  body footer .middle {
+    width: 50%;
+    float: right;
+  }
+  body footer .middle p {
+    width: 60%;
+  }
+  body footer .middle input {
+    width: 60%;
+    display: inline-block;
+    float: left;
+  }
+  body footer .middle button {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    margin-left: 35px;
+  }
+  body footer .bottom {
+    float: left;
+    width: 50%;
+  }
+  body footer .bottom div p {
+    width: 60%;
+  }
+  body footer .clear {
+    height: 10px;
+    clear: both;
   }
 }
 

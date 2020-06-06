@@ -239,17 +239,19 @@ body {
         }
     }
 
-    footer {
+    .top-footer {
+        background-image: url(../images/bg-footer-top-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 100%;
+        height: 112px;
+    }
 
-        .top {
-            background-image: url(../images/bg-footer-top-mobile.svg);
-            background-repeat: no-repeat;
-            background-position: bottom;
-            background-size: 100% 100%;
-            height: 112px;
-        }
+    footer {
+        background-color: $Very-Dark-Cyan;
 
         .middle {
+            overflow: hidden;
             background-color: $Very-Dark-Cyan;
             color: $Very-Pale-Blue;
             padding: 50px 25px 0px 25px;
@@ -283,9 +285,11 @@ body {
                     2px 2px 5px #000;
                 float: right;
             }
+        }
+
+        .bottom {
 
             div {
-                margin-top: 250px;
 
                 .img-huddle {
                     width: 60px;
@@ -303,12 +307,10 @@ body {
                     margin-bottom: 0px;
                 }
             }
-        }
 
-        .bottom {
             background-color: $Very-Dark-Cyan;
             color: $Very-Pale-Blue;
-            padding: 60px 25px;
+            padding: 50px 25px;
 
             div {
                 margin-bottom: 25px;
@@ -488,6 +490,58 @@ body {
 
             .bottom {
                 background-image: url(../images/bg-section-bottom-desktop-2.svg);
+            }
+        }
+
+        .section-6 {
+
+            h1 {
+                font-size: $Font-Size * 2.5;
+            }
+        }
+
+        .top-footer {
+            height: 250px;
+        }
+
+        footer {
+
+            .middle {
+                width: 50%;
+                float: right;
+
+                p {
+                    width: 60%;
+                }
+
+                input {
+                    width: 60%;
+                    display: inline-block;
+                    float: left;
+                }
+
+                button {
+                    width: 25%;
+                    display: inline-block;
+                    float: left;
+                    margin-left: 35px;
+                }
+            }
+
+            .bottom {
+                float: left;
+                width: 50%;
+
+                div {
+                    p {
+                        width: 60%;
+                    }
+                }
+            }
+            
+            .clear {
+                height: 10px;
+                clear: both;
             }
         }
     }
