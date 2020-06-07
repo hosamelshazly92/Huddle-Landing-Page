@@ -291,7 +291,7 @@ body footer .clear {
   clear: both;
 }
 
-@media screen and (min-width: 100px) and (max-width: 834px) {
+@media screen and (min-width: 100px) and (max-width: 500px) {
   body header {
     padding: 25px;
   }
