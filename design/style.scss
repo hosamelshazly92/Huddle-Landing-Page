@@ -60,13 +60,14 @@ body {
 
     .container {
         .body-container {
-            padding: 0px 60px;
+            padding: 0px 40px;
 
             .section-head {
                 margin: 125px 0px;
                 text-align: center;
 
                 h1 {
+                    font-size: $Font-Size * 2;
                     margin-bottom: 25px;
                 }
 
@@ -147,7 +148,7 @@ body {
             }
 
             p {
-                margin: 0px 120px;
+                margin: 0px 80px;
             }
         }
 
@@ -176,7 +177,7 @@ body {
             }
 
             p {
-                margin: 0px 120px;
+                margin: 0px 80px;
             }
         }
     }
@@ -202,11 +203,11 @@ body {
             }
 
             h2 {
-                margin: 0px 120px;
+                margin: 0px 120px 25px 120px;
             }
 
             p {
-                margin: 0px 120px;
+                margin: 0px 80px;
             }
         }
 
