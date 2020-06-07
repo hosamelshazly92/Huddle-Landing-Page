@@ -19,7 +19,7 @@ body {
   font-size: 14px;
 }
 body header {
-  padding: 25px;
+  padding: 50px;
 }
 body header img {
   width: 30px;
@@ -44,12 +44,11 @@ body .container .body-container .section-head {
   text-align: center;
 }
 body .container .body-container .section-head h1 {
-  font-size: 28px;
+  font-size: 42px;
   margin-bottom: 25px;
 }
 body .container .body-container .section-head p {
-  margin-bottom: 50px;
-  font-size: 14px;
+  margin: 0px 25% 50px 25%;
 }
 body .container .body-container .section-head button {
   height: 50px;
@@ -61,11 +60,18 @@ body .container .body-container .section-2 div {
   text-align: center;
 }
 body .container .body-container .section-2 div .img-1 {
-  width: 333px;
+  width: 75%;
   margin-bottom: 75px;
 }
+body .container .body-container .section-2 .media-left {
+  float: left;
+  margin-left: 12.5%;
+}
+body .container .body-container .section-2 .media-right {
+  float: right;
+  margin-right: 12.5%;
+}
 body .container .body-container .section-2 div div:first-of-type {
-  margin: 25px 0px;
   display: inline-block;
 }
 body .container .body-container .section-2 div div:first-of-type img {
@@ -82,78 +88,87 @@ body .container .body-container .section-2 div div:first-of-type p:last-of-type 
   color: #808080;
 }
 body .section-3 {
-  margin: 50px 0px;
+  margin: 350px 0px 100px 0px;
 }
 body .section-3 .top {
-  background-image: url(./images/bg-section-top-mobile-1.svg);
+  background-image: url(./images/bg-section-top-desktop-1.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top;
   height: 112px;
 }
 body .section-3 .middle {
-  text-align: center;
   background-color: #f5faff;
+  overflow: hidden;
 }
 body .section-3 .middle .img-3 {
-  width: 333px;
-  margin: 100px 0px 50px 0px;
+  float: right;
+  width: 400px;
+  margin: 100px 12.5% 50px 0px;
 }
 body .section-3 .middle h2 {
-  margin: 0px 120px 25px 120px;
+  font-size: 28px;
+  margin: 150px 120px 25px 120px;
 }
 body .section-3 .middle p {
-  margin: 0px 80px;
+  padding-right: 40%;
+  margin: 0px 120px;
 }
 body .section-3 .bottom {
-  background-image: url(./images/bg-section-bottom-mobile-1.svg);
+  background-image: url(./images/bg-section-bottom-desktop-1.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
   height: 112px;
 }
 body .section-4 {
-  margin: 25px 0px 25px 0px;
+  margin-bottom: 150px;
 }
 body .section-4 .middle {
-  text-align: center;
+  text-align: left;
 }
 body .section-4 .middle .img-4 {
-  width: 333px;
-  margin: 100px 0px 50px 0px;
+  width: 400px;
+  float: left;
+  margin: 0% 5% 50px 12.5%;
 }
 body .section-4 .middle h2 {
+  padding-top: 50px;
   margin: 0px 120px 25px 120px;
 }
 body .section-4 .middle p {
-  margin: 0px 80px;
+  margin: 0px 120px;
 }
 body .section-5 {
+  clear: both;
   margin: 50px 0px;
 }
 body .section-5 .top {
-  background-image: url(./images/bg-section-top-mobile-2.svg);
+  background-image: url(./images/bg-section-top-desktop-2.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: top;
   height: 112px;
 }
 body .section-5 .middle {
-  text-align: center;
   background-color: #f5faff;
+  overflow: hidden;
 }
 body .section-5 .middle .img-5 {
-  width: 333px;
-  margin: 100px 0px 50px 0px;
+  float: right;
+  width: 400px;
+  margin: 100px 12.5% 50px 0px;
 }
 body .section-5 .middle h2 {
-  margin: 0px 120px 25px 120px;
+  font-size: 28px;
+  margin: 150px 120px 25px 120px;
 }
 body .section-5 .middle p {
-  margin: 0px 80px;
+  padding-right: 40%;
+  margin: 0px 120px;
 }
 body .section-5 .bottom {
-  background-image: url(./images/bg-section-bottom-mobile-2.svg);
+  background-image: url(./images/bg-section-bottom-desktop-2.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
@@ -165,6 +180,7 @@ body .section-6 {
   text-align: center;
 }
 body .section-6 h1 {
+  font-size: 35px;
   margin-bottom: 25px;
 }
 body .section-6 button {
@@ -178,16 +194,16 @@ body .top-footer {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% 100%;
-  height: 112px;
+  height: 250px;
 }
 body footer {
   background-color: #00252e;
 }
 body footer .middle {
-  overflow: hidden;
-  background-color: #00252e;
+  padding: 100px 100px 0px 0px;
+  width: 50%;
+  float: right;
   color: #f5faff;
-  padding: 50px 25px 0px 25px;
 }
 body footer .middle h1 {
   margin-bottom: 25px;
@@ -196,27 +212,29 @@ body footer .middle p {
   margin-bottom: 25px;
   font-size: 14px;
   line-height: 26px;
+  width: 60%;
 }
 body footer .middle input {
-  display: block;
-  width: 100%;
-  height: 50px;
+  width: 60%;
+  height: 40px;
   border: none;
   border-radius: 10px;
   margin-bottom: 25px;
   padding-left: 20px;
+  float: left;
 }
 body footer .middle button {
-  height: 50px;
-  width: 200px;
+  width: 25%;
+  height: 40px;
+  margin-left: 35px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #000;
-  float: right;
 }
 body footer .bottom {
+  float: left;
+  width: 50%;
   background-color: #00252e;
   color: #f5faff;
-  padding: 50px 25px;
+  padding: 100px 0px 0px 100px;
 }
 body footer .bottom div .img-huddle {
   width: 60px;
@@ -228,8 +246,7 @@ body footer .bottom div h1:last-of-type {
   font-size: 56px;
 }
 body footer .bottom div p {
-  line-height: 26px;
-  margin-bottom: 0px;
+  width: 60%;
 }
 body footer .bottom div {
   margin-bottom: 25px;
@@ -269,130 +286,116 @@ body footer .bottom div .img-twitter {
   height: 30px;
   margin-right: 10px;
 }
+body footer .clear {
+  height: 75px;
+  clear: both;
+}
 
-@media screen and (min-width: 760px) and (max-width: 1366px) {
+@media screen and (min-width: 100px) and (max-width: 834px) {
   body header {
-    padding: 50px;
+    padding: 25px;
   }
   body .container .body-container .section-head h1 {
-    font-size: 42px;
+    font-size: 28px;
     margin-bottom: 25px;
   }
   body .container .body-container .section-head p {
-    margin: 0px 25% 50px 25%;
+    margin-bottom: 50px;
+    font-size: 14px;
   }
   body .container .body-container .section-2 div .img-1 {
-    width: 75%;
-  }
-  body .container .body-container .section-2 .media-left {
-    float: left;
-    margin-left: 12.5%;
-  }
-  body .container .body-container .section-2 .media-right {
-    float: right;
-    margin-right: 12.5%;
+    width: 333px;
   }
   body .section-3 {
-    margin: 250px 0px 100px 0px;
+    margin: 50px 0px;
   }
   body .section-3 .top {
-    background-image: url(./images/bg-section-top-desktop-1.svg);
+    background-image: url(./images/bg-section-top-mobile-1.svg);
   }
   body .section-3 .middle {
-    text-align: left;
-    overflow: hidden;
+    text-align: center;
+    background-color: #f5faff;
   }
   body .section-3 .middle .img-3 {
     float: right;
     margin-right: 12.5%;
   }
   body .section-3 .middle h2 {
-    font-size: 28px;
-    margin: 150px 120px 25px 120px;
+    margin: 0px 120px 25px 120px;
   }
   body .section-3 .middle p {
-    padding-right: 40%;
+    margin: 0px 80px;
   }
   body .section-3 .bottom {
-    background-image: url(./images/bg-section-bottom-desktop-1.svg);
+    background-image: url(./images/bg-section-bottom-mobile-1.svg);
   }
   body .section-4 {
-    margin-bottom: 150px;
+    margin: 25px 0px 25px 0px;
   }
   body .section-4 .middle {
-    text-align: left;
+    text-align: center;
   }
   body .section-4 .middle .img-4 {
     width: 333px;
-    float: left;
-    margin: 0% 5% 0% 12.5%;
+    margin: 100px 0px 50px 0px;
   }
   body .section-4 .middle h2 {
-    padding-top: 50px;
     margin: 0px 120px 25px 120px;
   }
   body .section-4 .middle p {
-    margin: 0px 120px;
+    margin: 0px 80px;
   }
   body .section-5 {
-    clear: both;
     margin: 50px 0px;
   }
   body .section-5 .top {
-    background-image: url(./images/bg-section-top-desktop-2.svg);
+    background-image: url(./images/bg-section-top-mobile-2.svg);
   }
   body .section-5 .middle {
-    text-align: left;
-    overflow: hidden;
+    text-align: center;
+    background-color: #f5faff;
   }
   body .section-5 .middle .img-5 {
     float: right;
     margin-right: 12.5%;
   }
   body .section-5 .middle h2 {
-    font-size: 28px;
-    margin: 150px 120px 25px 120px;
+    margin: 0px 120px 25px 120px;
   }
   body .section-5 .middle p {
-    padding-right: 40%;
+    margin: 0px 80px;
   }
   body .section-5 .bottom {
-    background-image: url(./images/bg-section-bottom-desktop-2.svg);
+    background-image: url(./images/bg-section-bottom-mobile-2.svg);
   }
   body .section-6 h1 {
-    font-size: 35px;
+    margin-bottom: 25px;
   }
   body .top-footer {
-    height: 250px;
+    height: 112px;
   }
   body footer .middle {
-    width: 50%;
-    float: right;
+    overflow: hidden;
+    background-color: #00252e;
+    color: #f5faff;
+    padding: 50px 25px 0px 25px;
+  }
+  body footer .middle h1 {
+    margin-bottom: 25px;
   }
   body footer .middle p {
-    width: 60%;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 26px;
   }
   body footer .middle input {
     width: 60%;
     display: inline-block;
     float: left;
   }
-  body footer .middle button {
-    width: 25%;
-    display: inline-block;
-    float: left;
-    margin-left: 35px;
-  }
-  body footer .bottom {
-    float: left;
-    width: 50%;
-  }
   body footer .bottom div p {
-    width: 60%;
-  }
-  body footer .clear {
-    height: 10px;
-    clear: both;
+    line-height: 26px;
+    margin-bottom: 0px;
   }
 }
 

@@ -36,7 +36,7 @@ body {
     font-size: $Font-Size;
 
     header {
-        padding: 25px;
+        padding: 50px;
 
         img {
             width: 30px;
@@ -67,13 +67,12 @@ body {
                 text-align: center;
 
                 h1 {
-                    font-size: $Font-Size * 2;
+                    font-size: $Font-Size * 3;
                     margin-bottom: 25px;
                 }
 
                 p {
-                    margin-bottom: 50px;
-                    font-size: $Font-Size;
+                    margin: 0px 25% 50px 25%;
                 }
 
                 button {
@@ -88,18 +87,28 @@ body {
             }
 
             .section-2 {
+
                 div {
                     text-align: center;
 
                     .img-1 {
-                        width: 333px;
+                        width: 75%;
                         margin-bottom: 75px;
                     }
                 }
 
+                .media-left {
+                    float: left;
+                    margin-left: 12.5%;
+                }
+
+                .media-right {
+                    float: right;
+                    margin-right: 12.5%;
+                }
+
                 div {
                     div:first-of-type {
-                        margin: 25px 0px;
                         display: inline-block;
 
                         img {
@@ -124,10 +133,10 @@ body {
     }
 
     .section-3 {
-        margin: 50px 0px;
+        margin: 350px 0px 100px 0px;
 
         .top {
-            background-image: url(./images/bg-section-top-mobile-1.svg);
+            background-image: url(./images/bg-section-top-desktop-1.svg);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-position: top;
@@ -135,25 +144,28 @@ body {
         }
 
         .middle {
-            text-align: center;
             background-color: $Very-Pale-Blue;
+            overflow: hidden;
 
             .img-3 {
-                width: 333px;
-                margin: 100px 0px 50px 0px;
+                float: right;
+                width: 400px;
+                margin: 100px 12.5% 50px 0px;
             }
 
             h2 {
-                margin: 0px 120px 25px 120px;
+                font-size: $Font-Size * 2;
+                margin: 150px 120px 25px 120px;
             }
 
             p {
-                margin: 0px 80px;
+                padding-right: 40%;
+                margin: 0px 120px;
             }
         }
 
         .bottom {
-            background-image: url(./images/bg-section-bottom-mobile-1.svg);
+            background-image: url(./images/bg-section-bottom-desktop-1.svg);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-position: bottom;
@@ -162,31 +174,34 @@ body {
     }
 
     .section-4 {
-        margin: 25px 0px 25px 0px;
+        margin-bottom: 150px;
 
         .middle {
-            text-align: center;
+            text-align: left;
 
             .img-4 {
-                width: 333px;
-                margin: 100px 0px 50px 0px;
+                width: 400px;
+                float: left;
+                margin: 0% 5% 50px 12.5%;
             }
 
             h2 {
+                padding-top: 50px;
                 margin: 0px 120px 25px 120px;
             }
 
             p {
-                margin: 0px 80px;
+                margin: 0px 120px;
             }
         }
     }
 
     .section-5 {
+        clear: both;
         margin: 50px 0px;
 
         .top {
-            background-image: url(./images/bg-section-top-mobile-2.svg);
+            background-image: url(./images/bg-section-top-desktop-2.svg);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-position: top;
@@ -194,25 +209,28 @@ body {
         }
 
         .middle {
-            text-align: center;
             background-color: $Very-Pale-Blue;
+            overflow: hidden;
 
             .img-5 {
-                width: 333px;
-                margin: 100px 0px 50px 0px;
+                float: right;
+                width: 400px;
+                margin: 100px 12.5% 50px 0px;
             }
 
             h2 {
-                margin: 0px 120px 25px 120px;
+                font-size: $Font-Size * 2;
+                margin: 150px 120px 25px 120px;
             }
 
             p {
-                margin: 0px 80px;
+                padding-right: 40%;
+                margin: 0px 120px;
             }
         }
 
         .bottom {
-            background-image: url(./images/bg-section-bottom-mobile-2.svg);
+            background-image: url(./images/bg-section-bottom-desktop-2.svg);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             background-position: bottom;
@@ -226,6 +244,7 @@ body {
         text-align: center;
 
         h1 {
+            font-size: $Font-Size * 2.5;
             margin-bottom: 25px;
         }
 
@@ -245,17 +264,17 @@ body {
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100% 100%;
-        height: 112px;
+        height: 250px;
     }
 
     footer {
         background-color: $Very-Dark-Cyan;
 
         .middle {
-            overflow: hidden;
-            background-color: $Very-Dark-Cyan;
+            padding: 100px 100px 0px 0px;
+            width: 50%;
+            float: right;
             color: $Very-Pale-Blue;
-            padding: 50px 25px 0px 25px;
 
             h1 {
                 margin-bottom: 25px;
@@ -265,30 +284,34 @@ body {
                 margin-bottom: 25px;
                 font-size: $Font-Size;
                 line-height: 26px;
+                width: 60%;
             }
 
             input {
-                display: block;
-                width: 100%;
-                height: 50px;
+                //                display: block;
+                width: 60%;
+                height: 40px;
                 border: none;
                 border-radius: 10px;
                 margin-bottom: 25px;
                 padding-left: 20px;
+                float: left;
             }
 
             button {
                 @extend %button;
-                height: 50px;
-                width: 200px;
+                width: 25%;
+                height: 40px;
+                //                display: inline-block;
+
+                margin-left: 35px;
                 border-radius: 10px;
-                box-shadow:
-                    2px 2px 5px #000;
-                float: right;
             }
         }
 
         .bottom {
+            float: left;
+            width: 50%;
 
             div {
 
@@ -304,14 +327,13 @@ body {
                 }
 
                 p {
-                    line-height: 26px;
-                    margin-bottom: 0px;
+                    width: 60%;
                 }
             }
 
             background-color: $Very-Dark-Cyan;
             color: $Very-Pale-Blue;
-            padding: 50px 25px;
+            padding: 100px 0px 0px 100px;
 
             div {
                 margin-bottom: 25px;
@@ -363,13 +385,18 @@ body {
                 }
             }
         }
+
+        .clear {
+            height: 75px;
+            clear: both;
+        }
     }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1366px) {
+@media screen and (min-width: 100px) and (max-width: 834px) {
     body {
         header {
-            padding: 50px;
+            padding: 25px;
         }
 
         .container {
@@ -378,12 +405,13 @@ body {
                 .section-head {
 
                     h1 {
-                        font-size: $Font-Size * 3;
+                        font-size: $Font-Size * 2;
                         margin-bottom: 25px;
                     }
 
                     p {
-                        margin: 0px 25% 50px 25%;
+                        margin-bottom: 50px;
+                        font-size: $Font-Size;
                     }
                 }
 
@@ -391,33 +419,23 @@ body {
                     div {
 
                         .img-1 {
-                            width: 75%;
+                            width: 333px;
                         }
-                    }
-
-                    .media-left {
-                        float: left;
-                        margin-left: 12.5%;
-                    }
-
-                    .media-right {
-                        float: right;
-                        margin-right: 12.5%;
                     }
                 }
             }
         }
 
         .section-3 {
-            margin: 250px 0px 100px 0px;
+            margin: 50px 0px;
 
             .top {
-                background-image: url(./images/bg-section-top-desktop-1.svg);
+                background-image: url(./images/bg-section-top-mobile-1.svg);
             }
 
             .middle {
-                text-align: left;
-                overflow: hidden;
+                text-align: center;
+                background-color: $Very-Pale-Blue;
 
                 .img-3 {
                     float: right;
@@ -425,54 +443,50 @@ body {
                 }
 
                 h2 {
-                    font-size: $Font-Size * 2;
-                    margin: 150px 120px 25px 120px;
-                }
-
-                p {
-                    padding-right: 40%;
-                }
-            }
-
-            .bottom {
-                background-image: url(./images/bg-section-bottom-desktop-1.svg);
-            }
-        }
-
-        .section-4 {
-            margin-bottom: 150px;
-
-            .middle {
-                text-align: left;
-
-                .img-4 {
-                    width: 333px;
-                    float: left;
-                    margin: 0% 5% 0% 12.5%;
-                }
-
-                h2 {
-                    padding-top: 50px;
                     margin: 0px 120px 25px 120px;
                 }
 
                 p {
-                    margin: 0px 120px;
+                    margin: 0px 80px;
+                }
+            }
+
+            .bottom {
+                background-image: url(./images/bg-section-bottom-mobile-1.svg);
+            }
+        }
+
+        .section-4 {
+            margin: 25px 0px 25px 0px;
+
+            .middle {
+                text-align: center;
+
+                .img-4 {
+                    width: 333px;
+                    margin: 100px 0px 50px 0px;
+                }
+
+                h2 {
+                    margin: 0px 120px 25px 120px;
+                }
+
+                p {
+                    margin: 0px 80px;
                 }
             }
         }
 
         .section-5 {
-            clear: both;
             margin: 50px 0px;
 
             .top {
-                background-image: url(./images/bg-section-top-desktop-2.svg);
+                background-image: url(./images/bg-section-top-mobile-2.svg);
             }
 
             .middle {
-                text-align: left;
-                overflow: hidden;
+                text-align: center;
+                background-color: $Very-Pale-Blue;
 
                 .img-5 {
                     float: right;
@@ -480,39 +494,46 @@ body {
                 }
 
                 h2 {
-                    font-size: $Font-Size * 2;
-                    margin: 150px 120px 25px 120px;
+                    margin: 0px 120px 25px 120px;
                 }
 
                 p {
-                    padding-right: 40%;
+                    margin: 0px 80px;
                 }
             }
 
             .bottom {
-                background-image: url(./images/bg-section-bottom-desktop-2.svg);
+                background-image: url(./images/bg-section-bottom-mobile-2.svg);
             }
         }
 
         .section-6 {
 
             h1 {
-                font-size: $Font-Size * 2.5;
+                margin-bottom: 25px;
             }
         }
 
         .top-footer {
-            height: 250px;
+            height: 112px;
         }
 
         footer {
 
             .middle {
-                width: 50%;
-                float: right;
+                overflow: hidden;
+                background-color: $Very-Dark-Cyan;
+                color: $Very-Pale-Blue;
+                padding: 50px 25px 0px 25px;
+
+                h1 {
+                    margin-bottom: 25px;
+                }
 
                 p {
-                    width: 60%;
+                    margin-bottom: 25px;
+                    font-size: $Font-Size;
+                    line-height: 26px;
                 }
 
                 input {
@@ -521,28 +542,17 @@ body {
                     float: left;
                 }
 
-                button {
-                    width: 25%;
-                    display: inline-block;
-                    float: left;
-                    margin-left: 35px;
-                }
+                button {}
             }
 
             .bottom {
-                float: left;
-                width: 50%;
 
                 div {
                     p {
-                        width: 60%;
+                        line-height: 26px;
+                        margin-bottom: 0px;
                     }
                 }
-            }
-            
-            .clear {
-                height: 10px;
-                clear: both;
             }
         }
     }
