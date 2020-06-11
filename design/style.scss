@@ -18,7 +18,7 @@ $Font-Size: 14px;
 %button {
     font-family: $Body-Font;
     font-weight: 600;
-    font-size: $Font-Size;
+    font-size: $Font-Size; 
     background-color: $Pink;
     border: 2px solid $Pink;
     border-radius: 22px;
@@ -36,16 +36,18 @@ body {
     font-size: $Font-Size;
 
     header {
-        padding: 50px;
+        padding: 65px 35px;
 
         img {
-            width: 30px;
-            height: 25px;
+            height: 40px;
+            margin-right: 10px;
         }
 
         h1 {
             font-family: $Header-Font;
             display: inline-block;
+            font-size: $Font-Size * 4;
+            line-height: 0;
         }
 
         button {
@@ -63,26 +65,26 @@ body {
             padding: 0px 40px;
 
             .section-head {
-                margin: 150px 0px;
+                margin: 175px 0px;
                 text-align: center;
 
                 h1 {
-                    font-size: $Font-Size * 3;
+                    font-size: $Font-Size * 2.6;
                     margin-bottom: 25px;
                 }
 
                 p {
-                    margin: 0px 25% 50px 25%;
+                    margin: 0px 20% 50px 20%;
+                    font-size: $Font-Size * 1.2;
                 }
 
                 button {
                     @extend %button;
-                    height: 50px;
-                    width: 250px;
-                    border-radius: 28px;
+                    height: 75px;
+                    width: 300px; 
+                    border-radius: 50px;
                     box-shadow:
-                        2px 2px 5px $Light-Grey,
-                        5px 5px 15px $Light-Grey;
+                        1px 1px 5px $Light-Grey;
                 }
             }
 
