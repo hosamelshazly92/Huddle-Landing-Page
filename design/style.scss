@@ -18,7 +18,7 @@ $Font-Size: 14px;
 %button {
     font-family: $Body-Font;
     font-weight: 600;
-    font-size: $Font-Size; 
+    font-size: $Font-Size;
     background-color: $Pink;
     border: 2px solid $Pink;
     border-radius: 22px;
@@ -81,7 +81,7 @@ body {
                 button {
                     @extend %button;
                     height: 75px;
-                    width: 300px; 
+                    width: 300px;
                     border-radius: 50px;
                     box-shadow:
                         1px 1px 5px $Light-Grey;
@@ -95,6 +95,7 @@ body {
 
                     .img-1 {
                         width: 75%;
+                        margin-top: 75px;
                         margin-bottom: 75px;
                     }
                 }
@@ -121,7 +122,7 @@ body {
                         p:first-of-type {
                             clear: both;
                             font-weight: 600;
-                            font-size: $Font-Size * 6;
+                            font-size: $Font-Size * 7;
                         }
 
                         p:last-of-type {
@@ -135,7 +136,7 @@ body {
     }
 
     .section-3 {
-        margin: 350px 0px 100px 0px;
+        margin: 400px 0px 100px 0px;
 
         .top {
             background-image: url(./images/bg-section-top-desktop-1.svg);
@@ -152,17 +153,17 @@ body {
             .img-3 {
                 float: right;
                 width: 400px;
-                margin: 100px 12.5% 50px 0px;
+                margin: 100px 10% 50px 0px;
             }
 
             h2 {
-                font-size: $Font-Size * 2;
-                margin: 150px 120px 25px 120px;
+                font-size: $Font-Size * 2.5;
+                margin: 200px 100px 25px 100px;
             }
 
             p {
-                padding-right: 40%;
-                margin: 0px 120px;
+                padding-right: 50%;
+                margin: 0px 100px;
             }
         }
 
@@ -184,12 +185,13 @@ body {
             .img-4 {
                 width: 400px;
                 float: left;
-                margin: 0% 5% 50px 12.5%;
+                margin: 100px 5% 100px 10%;
             }
 
             h2 {
-                padding-top: 50px;
-                margin: 0px 120px 25px 120px;
+                padding-top: 175px;
+                margin: 0px 100px 25px 100px;
+                font-size: $Font-Size * 2.2;
             }
 
             p {
@@ -221,13 +223,13 @@ body {
             }
 
             h2 {
-                font-size: $Font-Size * 2;
-                margin: 150px 120px 25px 120px;
+                font-size: $Font-Size * 2.5;
+                margin: 150px 100px 25px 100px;
             }
 
             p {
-                padding-right: 40%;
-                margin: 0px 120px;
+                padding-right: 50%;
+                margin: 0px 100px;
             }
         }
 
@@ -241,23 +243,22 @@ body {
     }
 
     .section-6 {
-        margin: 125px 0px;
+        margin: 140px 0px;
         padding: 0px 60px;
         text-align: center;
 
         h1 {
-            font-size: $Font-Size * 2.5;
-            margin-bottom: 25px;
+            font-size: $Font-Size * 3;
+            margin-bottom: 30px;
         }
 
         button {
             @extend %button;
-            height: 50px;
-            width: 250px;
-            border-radius: 28px;
+            height: 75px;
+            width: 300px;
+            border-radius: 50px;
             box-shadow:
-                2px 2px 5px $Light-Grey,
-                5px 5px 15px $Light-Grey;
+                1px 1px 5px $Light-Grey;
         }
     }
 
@@ -266,7 +267,7 @@ body {
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100% 100%;
-        height: 250px;
+        height: 100px;
     }
 
     footer {
@@ -579,7 +580,7 @@ body {
                         width: 75%;
                     }
                 }
-                
+
                 div {
                     .img-email {
                         float: left;
