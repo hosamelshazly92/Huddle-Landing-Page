@@ -274,77 +274,82 @@ body {
         background-color: $Very-Dark-Cyan;
 
         .middle {
-            padding: 100px 100px 0px 0px;
+            padding: 100px 50px 0px 50px;
             width: 50%;
             float: right;
             color: $Very-Pale-Blue;
 
             h1 {
                 margin-bottom: 25px;
+                font-size: $Font-Size * 1.5;
             }
 
             p {
                 margin-bottom: 25px;
-                font-size: $Font-Size;
-                line-height: 26px;
-                width: 60%;
+                font-size: $Font-Size * 0.8;
+                line-height: 1.5;
+                width: 75%;
             }
 
             input {
-                //                display: block;
-                width: 60%;
+                width: 75%;
                 height: 40px;
                 border: none;
-                border-radius: 10px;
+                border-radius: 5px;
+                margin-right: 20px;
                 margin-bottom: 25px;
                 padding-left: 20px;
                 float: left;
             }
 
+            input::placeholder {
+                font-size: $Font-Size * 0.8;
+            }
+
             button {
                 @extend %button;
-                width: 25%;
+                width: 75px;
                 height: 40px;
-                //                display: inline-block;
-
-                margin-left: 35px;
-                border-radius: 10px;
+                border-radius: 5px;
+                font-size: $Font-Size * 0.8;
             }
         }
 
         .bottom {
             float: left;
             width: 50%;
+            background-color: $Very-Dark-Cyan;
+            color: $Very-Pale-Blue;
+            padding: 100px 0px 0px 50px;
 
             div {
-
                 .img-huddle {
-                    width: 60px;
-                    height: 50px;
+                    width: 50px;
+                    height: 40px;
+                    margin-right: 10px;
                 }
 
                 h1:last-of-type {
                     font-family: $Header-Font;
                     display: inline-block;
-                    font-size: $Font-Size * 4;
+                    font-size: $Font-Size * 3;
+                    width: 75%;
                 }
 
                 p {
-                    width: 60%;
+                    width: 70%;
+                    font-size: $Font-Size * 0.8;
+                    line-height: 1.5;
                 }
             }
 
-            background-color: $Very-Dark-Cyan;
-            color: $Very-Pale-Blue;
-            padding: 100px 0px 0px 100px;
-
             div {
-                margin-bottom: 25px;
+                margin-bottom: 15px;
 
                 .img-phone {
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 25px;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 20px;
                 }
 
                 p {
@@ -354,9 +359,9 @@ body {
 
             div {
                 .img-email {
-                    width: 40px;
-                    height: 30px;
-                    margin-right: 25px;
+                    width: 20px;
+                    height: 15px;
+                    margin-right: 20px;
                 }
 
                 p {
@@ -367,23 +372,23 @@ body {
             div {
                 .img-facebook {
                     filter: invert(100%) sepia(4%) saturate(6145%) hue-rotate(175deg) brightness(93%) contrast(119%);
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
                     margin-right: 10px;
-                    margin-top: 60px;
+                    margin-top: 75px;
                 }
 
                 .img-instagram {
                     filter: invert(100%) sepia(4%) saturate(6145%) hue-rotate(175deg) brightness(93%) contrast(119%);
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
                     margin-right: 10px;
                 }
 
                 .img-twitter {
                     filter: invert(100%) sepia(4%) saturate(6145%) hue-rotate(175deg) brightness(93%) contrast(119%);
-                    width: 40px;
-                    height: 40px;
+                    width: 30px;
+                    height: 30px;
                     margin-right: 10px;
                 }
             }
