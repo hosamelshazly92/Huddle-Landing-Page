@@ -301,24 +301,38 @@ body footer .bottom div .img-twitter {
   margin-right: 10px;
 }
 body footer .clear {
-  height: 75px;
+  height: 20px;
   clear: both;
 }
 
-@media screen and (min-width: 100px) and (max-width: 500px) {
+@media (max-width: 870px) {
   body header {
-    padding: 25px;
+    padding: 20px;
+  }
+  body header img {
+    height: 20px;
+    margin-right: 5px;
+  }
+  body header h1 {
+    display: inline-block;
+    font-size: 28px;
+    line-height: 0;
+  }
+  body header button {
+    height: 30px;
+    width: 125px;
+    font-size: 11.2px;
   }
   body .container .body-container .section-head h1 {
     font-size: 28px;
-    margin-bottom: 25px;
+    margin: 0px 5% 25px 5%;
   }
   body .container .body-container .section-head p {
     margin: 0px 50px 50px 50px;
     font-size: 14px;
   }
   body .container .body-container .section-2 div .img-1 {
-    width: 333px;
+    width: 75%;
   }
   body .container .body-container .section-2 .media-left,
 body .container .body-container .section-2 .media-right {
@@ -340,11 +354,12 @@ body .container .body-container .section-2 .media-right {
     margin-right: 0px;
   }
   body .section-3 .middle h2 {
-    margin: 50px 120px 25px 120px;
+    margin: 50px 50px 25px 50px;
+    font-size: 28px;
   }
   body .section-3 .middle p {
     padding-right: 0px;
-    margin: 0px 150px 100px 150px;
+    margin: 0px 75px 100px 75px;
   }
   body .section-3 .bottom {
     background-image: url(./images/bg-section-bottom-mobile-1.svg);
@@ -357,11 +372,12 @@ body .container .body-container .section-2 .media-right {
     margin: 150px 0px 50px 0px;
   }
   body .section-4 .middle h2 {
-    margin: 50px 120px 25px 120px;
+    margin: 50px 50px 25px 50px;
     padding-top: 0px;
+    font-size: 28px;
   }
   body .section-4 .middle p {
-    margin: 0px 150px;
+    margin: 0px 75px;
   }
   body .section-5 {
     margin: 50px 0px;
@@ -378,25 +394,27 @@ body .container .body-container .section-2 .media-right {
     margin-right: 0px;
   }
   body .section-5 .middle h2 {
-    margin: 50px 120px 25px 120px;
+    margin: 50px 50px 25px 50px;
+    font-size: 28px;
   }
   body .section-5 .middle p {
-    margin: 0px 150px 50px 150px;
+    margin: 0px 75px 50px 75px;
     padding-right: 0px;
   }
   body .section-5 .bottom {
     background-image: url(./images/bg-section-bottom-mobile-2.svg);
   }
   body .section-6 h1 {
-    font-size: 28px;
+    font-size: 35px;
+    margin-bottom: 50px;
   }
   body .top-footer {
-    height: 112px;
+    height: 50px;
   }
   body footer .middle {
     float: none;
     width: 100%;
-    padding: 50px 100px;
+    padding: 75px 25px;
     overflow: hidden;
   }
   body footer .middle h1 {
@@ -413,17 +431,25 @@ body .container .body-container .section-2 .media-right {
     display: block;
     float: none;
   }
+  body footer .middle input::placeholder {
+    font-size: 14px;
+  }
   body footer .middle button {
     float: right;
-    margin-left: 0px;
+    width: 150px;
+    font-size: 14px;
   }
   body footer .bottom {
     width: 100%;
-    padding: 100px 100px;
+    padding: 100px 25px 0px 25px;
   }
   body footer .bottom div p {
     width: 100%;
     line-height: 26px;
+    font-size: 14px;
+  }
+  body footer .bottom div:first-child {
+    margin-bottom: 75px;
   }
   body footer .bottom div .img-phone {
     float: left;

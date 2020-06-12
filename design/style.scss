@@ -395,16 +395,33 @@ body {
         }
 
         .clear {
-            height: 75px;
+            height: 20px;
             clear: both;
         }
     }
 }
 
-@media screen and (min-width: 100px) and (max-width: 500px) {
+@media (max-width: 870px) {
     body {
         header {
-            padding: 25px;
+            padding: 20px;
+
+            img {
+                height: 20px;
+                margin-right: 5px;
+            }
+
+            h1 {
+                display: inline-block;
+                font-size: $Font-Size * 2;
+                line-height: 0;
+            }
+
+            button {
+                height: 30px;
+                width: 125px;
+                font-size: $Font-Size * 0.8;
+            }
         }
 
         .container {
@@ -414,7 +431,7 @@ body {
 
                     h1 {
                         font-size: $Font-Size * 2;
-                        margin-bottom: 25px;
+                        margin: 0px 5% 25px 5%;
                     }
 
                     p {
@@ -427,7 +444,7 @@ body {
                     div {
 
                         .img-1 {
-                            width: 333px;
+                            width: 75%;
                         }
                     }
 
@@ -457,12 +474,13 @@ body {
                 }
 
                 h2 {
-                    margin: 50px 120px 25px 120px;
+                    margin: 50px 50px 25px 50px;
+                    font-size: $Font-Size * 2;
                 }
 
                 p {
                     padding-right: 0px;
-                    margin: 0px 150px 100px 150px;
+                    margin: 0px 75px 100px 75px;
                 }
             }
 
@@ -482,12 +500,13 @@ body {
                 }
 
                 h2 {
-                    margin: 50px 120px 25px 120px;
+                    margin: 50px 50px 25px 50px;
                     padding-top: 0px;
+                    font-size: $Font-Size * 2;
                 }
 
                 p {
-                    margin: 0px 150px;
+                    margin: 0px 75px;
                 }
             }
         }
@@ -509,11 +528,12 @@ body {
                 }
 
                 h2 {
-                    margin: 50px 120px 25px 120px;
+                    margin: 50px 50px 25px 50px;
+                    font-size: $Font-Size * 2;
                 }
 
                 p {
-                    margin: 0px 150px 50px 150px;
+                    margin: 0px 75px 50px 75px;
                     padding-right: 0px;
                 }
             }
@@ -526,12 +546,13 @@ body {
         .section-6 {
 
             h1 {
-                font-size: $Font-Size * 2;
+                font-size: $Font-Size * 2.5;
+                margin-bottom: 50px;
             }
         }
 
         .top-footer {
-            height: 112px;
+            height: 50px;
         }
 
         footer {
@@ -539,7 +560,7 @@ body {
             .middle {
                 float: none;
                 width: 100%;
-                padding: 50px 100px;
+                padding: 75px 25px;
                 overflow: hidden;
 
                 h1 {
@@ -559,21 +580,31 @@ body {
                     float: none;
                 }
 
+                input::placeholder {
+                    font-size: $Font-Size;
+                }
+
                 button {
                     float: right;
-                    margin-left: 0px;
+                    width: 150px;
+                    font-size: $Font-Size;
                 }
             }
 
             .bottom {
                 width: 100%;
-                padding: 100px 100px;
+                padding: 100px 25px 0px 25px; 
 
                 div {
                     p {
                         width: 100%;
                         line-height: 26px;
+                        font-size: $Font-Size;
                     }
+                }
+
+                div:first-child {
+                    margin-bottom: 75px;
                 }
 
                 div {
